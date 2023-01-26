@@ -1,1 +1,18 @@
 
+import java.util.Scanner;
+
+public class sayibasamaktop {
+    public static void main(String[] args) {
+        Scanner mert = new Scanner(System.in);
+        System.out.print("Lutfen bir sayi giriniz: ");
+        int a = mert.nextInt() , total = 0 , lastNumber;
+        while(a != 0){
+            lastNumber = a%10;
+            a /=10;
+            total+=lastNumber;
+        }
+        System.out.println(total);
+
+
+    }
+}
